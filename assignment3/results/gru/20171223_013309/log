@@ -1,0 +1,25 @@
+2017-12-23 01:33:12,820:INFO: Building model...
+2017-12-23 01:33:32,150:INFO: took 19.33 seconds
+2017-12-23 01:33:34,703:INFO: Epoch 1 out of 1
+2017-12-23 01:40:33,120:INFO: Evaluating on development data
+2017-12-23 01:42:40,954:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2732.00 	282.00  	32.00   	14.00   	89.00   
+ORG     	175.00  	1547.00 	94.00   	114.00  	162.00  
+LOC     	87.00   	325.00  	1537.00 	72.00   	73.00   
+MISC    	56.00   	199.00  	41.00   	858.00  	114.00  
+O       	65.00   	137.00  	19.00   	58.00   	42480.00
+
+2017-12-23 01:42:40,955:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.98 	0.88 	0.87 	0.87 
+ORG  	0.97 	0.62 	0.74 	0.68 
+LOC  	0.99 	0.89 	0.73 	0.81 
+MISC 	0.99 	0.77 	0.68 	0.72 
+O    	0.99 	0.99 	0.99 	0.99 
+micro	0.98 	0.96 	0.96 	0.96 
+macro	0.98 	0.83 	0.80 	0.81 
+not-O	0.98 	0.79 	0.78 	0.78 
+
+2017-12-23 01:42:40,955:INFO: Entity level P/R/F1: 0.69/0.73/0.71
+2017-12-23 01:42:40,955:INFO: New best score! Saving model in results/gru/20171223_013309/model.weights
